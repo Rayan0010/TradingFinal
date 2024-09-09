@@ -6,6 +6,35 @@
     <title>Advanced Trading Interface</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+         #ticker {
+            border: none; /* Remove border */
+            outline: none; /* Remove outline */
+            box-shadow: none; /* Remove shadow if any */
+        }
+
+        /* Style for the suggestion dropdown */
+        #suggestions {
+            background-color: white; /* Background color of suggestions */
+            color: black; /* Text color of suggestions */
+            border: 1px solid #ddd; /* Border color of the dropdown */
+            border-radius: 4px; /* Rounded corners */
+            max-height: 300px; /* Maximum height for the dropdown */
+            overflow-y: auto; /* Scrollbar if content exceeds max height */
+            z-index: 10; /* Ensure dropdown is above other elements */
+            width: 300px; /* Increased width for the suggestions list */
+            left: 0; /* Align with the left of the parent */
+            top: 100%; /* Position below the search box */
+        }
+
+        /* Style for each suggestion item */
+        #suggestions .suggestion-item {
+            padding: 8px 12px; /* Padding for each item */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+
+        #suggestions .suggestion-item:hover {
+            background-color: #f0f0f0; /* Background color on hover */
+        }
         .watchlist {
             width: 200px;
             border-left: 1px solid #ccc;
